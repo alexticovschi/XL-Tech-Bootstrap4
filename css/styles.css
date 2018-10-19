@@ -1,0 +1,291 @@
+body, html {
+    height: 100%;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.navbar {
+    background-color: rgba(21, 31, 33, 0.7);
+    border-bottom: 1px solid #dedede;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #d1d1d1;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar .navbar-toggler {
+    border: 1px solid #ccc;
+}
+
+.navbar .navbar-toggler:hover {
+    border: 1px solid #fff;
+    outline-color: #dedede;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* HEADER section */
+#header {
+    background: url(../img/stars-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+#header img {
+    padding: 0 0 20px 0;
+    width: 80%;
+}
+
+#header .header-right {
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#header .fa {
+    margin: 5% 0;
+}
+
+#header a .fa {
+    color: #fff;
+}
+
+#header a .fa:hover {
+    color: #ccc;
+}
+
+
+/* SOCIAL section */
+#social {
+    padding: 6rem 0;
+}
+
+#social ul li .fab,.ls {
+    font-size: 1.5em;
+    color: #be2835;
+    border: 2px solid #be2835;
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    text-align: center;
+    padding: 30% 0;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#social 
+.fab:hover,
+.fas:hover {
+    color: #fff;
+    background: #b22825;
+}
+
+/* WHO section */
+#who {
+    padding: 5rem 0;
+    background-color: #f6f6f6;
+}
+
+#who .btn-who {
+    background-color: #be2835;
+    color: #fff;
+    width: 50%;
+}
+
+#who .btn-who:hover {
+    background-color: transparent;
+    border: 1px solid #be2835;
+    color: #be2835;
+}
+
+
+/* WORK section */
+#work {
+    padding: 5rem 0;
+}
+
+#work .work-img {
+    position: relative;
+}
+
+#work .work-img .img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/eye.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#work .work-img .img-overlay:hover {
+    opacity: 1;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+
+/* WHY section */
+#why {
+    padding: 5rem 0;
+    background-color: #f6f6f6;
+}
+
+#why .fa {
+    color: #be2835;
+    padding: 15px 0;
+}
+
+
+/* CUSTOMERS section */
+#customers {
+    padding: 5rem 0;
+    overflow: hidden;
+}
+
+#customers .carousel-indicators li {
+    background-color: #be2835;
+
+}
+
+#customers .carousel-inner {
+    margin-bottom: 50px;
+}
+
+#customers .carousel-indicators {
+    margin-bottom: -50px;
+}
+
+
+/* PRICING section */
+#pricing {
+    padding: 5rem 0;
+    background-color: #f6f6f6;
+}
+
+#pricing .card {
+    transition: all 0.4s ease-in-out;
+}
+
+#pricing .card:hover {
+    box-shadow: 3px 8px 12px grey;
+}
+
+#pricing .card .card-header {
+    background-color: #6e6e6e;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+
+#pricing .card .standard {
+    background-color: #be2835;
+    font-size: 1.3em;
+    padding: 15px 0;
+}
+
+#pricing .card .card-header:hover {
+    background-color: #be2835;
+}
+
+
+
+/* CONTACT section */
+#contact {
+    padding: 5rem 0;
+}
+
+
+/* FOOTER section */
+#footer {
+    padding: 2rem 0;
+    background-color: #484848;
+    color: #fff;
+    overflow: hidden;
+}
+
+#footer ul li i.fas {
+    color: #fff;
+    border: none;
+    background: none;
+}
+
+#footer ul li i.fas:hover {
+    color: #be2835;
+}
+
+#footer a {
+    color: #fff;
+}
+#footer a:hover {
+    color: #be2835;
+}
+
+
+
+#footer a .fab,.fas {
+    transition: all 0.3s ease-in;
+}
+
+#footer a .fab:hover {
+    transform: scale(1.3)
+}
+
+#footer a .fas:hover {
+    transform: scale(1.3)
+}
+
+#footer .fab, .fas.ft {
+    padding: 0 5px;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    #header {
+        text-align: center;
+    }
+    #header img {
+        margin: 0 auto;
+    }
+    #social {
+        text-align: center;
+    }
+    #social hr, #who hr {
+        margin: 8% auto;
+    }
+
+    #who {
+        text-align: center;
+    }
+    #who img {
+        margin-top: 15%;
+    }
+
+    #footer {
+        text-align: center;
+    }
+}
